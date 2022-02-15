@@ -1,6 +1,6 @@
 <h1 align="center">Frontend Mentor - Fylo Data Storage Component Solution</h1>
 
-<img src=".....?raw=true" ></img>
+<img src="https://github.com/NickODxyz/FM-fylo-data-storage-component-master/blob/main/Preview.JPG?raw=true" ></img>
 
 <br>
 
@@ -26,7 +26,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 <br>
 
 ## Site links
-Hosted [Live Site]()
+Hosted [Live Site](https://nickodxyz.github.io/FM-fylo-data-storage-component-master/)
 <br>
 Frontend Mentor [Solution Page]()
 
