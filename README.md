@@ -28,7 +28,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 ## Site links
 Hosted [Live Site](https://nickodxyz.github.io/FM-fylo-data-storage-component-master/)
 <br>
-Frontend Mentor [Solution Page]()
+Frontend Mentor [Solution Page](https://www.frontendmentor.io/solutions/fylo-data-storage-component-flexbox-lDmnUZj6F)
 
 <br>
 
