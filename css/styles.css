@@ -1,0 +1,212 @@
+/* 1440 x 800 */
+
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--pale-blue);
+    font-family: "raleway", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    background: url("../images/bg-mobile.png") no-repeat;
+    max-width: 144rem;
+    min-width: 37.5rem;
+    max-height: 80rem;
+    min-height: 66.7rem;
+    margin: 0 auto;
+}
+
+.fylo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    border-radius: 1rem 10rem 1rem 1rem;
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    min-width: 32.6rem;
+    min-height: 20.1rem;
+    padding: 4rem 0 4rem 4.13rem;
+}
+.fylo-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.605rem;
+}
+.fylo-icon {
+    background-color: var(--very-dark-blue);
+    border-radius: 1rem;
+    padding: 1.3rem;
+    max-width: 4.815rem;
+    max-height: 4.8rem;
+    display: grid;
+    place-content: center;
+}
+.fylo-icon-doc {
+    background-image: url("../images/icon-document.svg");
+    min-width: 1.924rem;
+    min-height: 2.398rem;
+}
+.fylo-icon-folder {
+    background-image: url("../images/icon-folder.svg");
+    min-width: 2.407rem;
+    min-height: 1.92rem;
+}
+.fylo-icon-upload {
+    background-image: url("../images/icon-upload.svg");
+    min-width: 2.407rem;
+    min-height: 1.6rem;
+}
+
+.data {
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    padding: 3.2rem 3.2rem 5.2rem;
+    text-align: center;
+    min-width: 32.6rem;
+    position: relative;
+}
+.data-text {
+    font-weight: 400;
+    line-height: 1.143;
+    margin-bottom: 1.6rem;
+}
+.data-text span {
+    font-weight: 700;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    background-color: hsl(229, 57%, 11%, 0.49);
+    border-radius: 1rem;
+    align-content: start;
+    padding-left: 0.3rem;
+    margin-bottom: 1rem;
+}
+.progress-bar-gradient {
+    background: linear-gradient(to right, hsla(6, 100%, 80%, 1), hsla(335, 100%, 65%, 1));
+    position: inherit;
+    width: 75%;
+    height: 1.4rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 0.2rem;
+}
+.progress-bar-dot {
+    background-color: #fff;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+.progress-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.17;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert {
+    background-color: #fff;
+    color: var(--very-dark-blue);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    border-radius: 1rem;
+    bottom: -36px;
+    left: 67px;
+}
+.alert p {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.alert span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-left: 0.9rem;
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        background-image: url("../images/bg-desktop.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 144rem;
+        height: 80rem;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: end;
+        padding-bottom: 31rem;
+    }
+
+    .fylo {
+        min-width: 35rem;
+    }
+
+    .data {
+        min-width: 54rem;
+        min-height: 15.4rem;
+        padding: 3.2rem 3.2rem 4rem;
+        text-align: left;
+    }
+
+    .alert {
+        background-color: #fff;
+        color: var(--very-dark-blue);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 1.6rem 1rem 1.6rem 2.4rem;
+        border-radius: 1rem 1rem 0 1rem;
+        right: 40;
+        bottom: 129px;
+        left: 321px;
+    }
+    .alert::after {
+        content: "";
+        width: 2.266rem;
+        height: 2.266rem;
+        background-color: #fff;
+        position: relative;
+        top: 47px;
+        right: 0;
+        bottom: 0;
+        left: 10px;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 0);
+    }
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
